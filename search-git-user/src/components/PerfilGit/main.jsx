@@ -34,7 +34,7 @@ const PerfilGit = () => {
     if (avatarLink) {
       return <img src={avatarLink} alt="avatar user" className="avatar--img" />;
     } else {
-      return "";
+      return null;
     }
   };
 
@@ -54,23 +54,22 @@ const PerfilGit = () => {
         <div className="avatar">
            {exibirAvatar()} 
           <h2>welcome {nomeGit}</h2>
-          
         </div>
       </section>
       <section className="container">
         <ul className="list">
-          {repos.map(({ id, name, language, html_url }) => (
+        {Array.isArray(repos) && repos.map(({ id, name, language, html_url }) =>  (
             <li key={id} className="listItem">
                 <div className="itemName">
-                    <b>Nome :</b>
+                    <b>Name :</b>
                     {name}
                 </div>
                <div className="itemLanguage">
-                    <b>Linguagem :</b>
+                    <b>Language :</b>
                     {language}
                </div>
                 <a className="itemLink" target=" _blank" href={html_url}>
-                  Visite no Git
+                  Visit on github
                 </a>
             </li>
           ))}
@@ -88,7 +87,8 @@ const PerfilGit = () => {
             >
               Tales Lima
             </a>{" "}
-            - Todos os direitos reservados{" "}
+            - 
+All rights reserved{" "}
           </p>
         </div>
       </footer>
