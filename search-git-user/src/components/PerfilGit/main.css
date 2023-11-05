@@ -1,49 +1,51 @@
-.divForm{
-    background-color: #C2D7F2;
-}
 
 .centerForm{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    border-radius: 0;
-    border-bottom-right-radius: 10px;
-    padding: 10px 0;
+    padding-top: 20px;
 }
 .centerForm--input{
-    margin-left: 30px;
-        width: 300px;
+    width: 200px;
+    background-color: #a3c4f0;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
-.ul{
-padding: 0;
-
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
 }
 
-.ul--li{
-    display: flex;
+.listItem{
     list-style: none;
-    background-color: #C2D7F2;
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #a3c4f0;
 }
-.ul--li--h2{
-    display: flex;
-    justify-content: center;
-}
-.ul--li:nth-child(odd) {
-        background-color: #D8E3F2; /* Defina a cor de fundo desejada para elementos ímpares */
-      }
 
-.ul--li--p{
-    padding: 0;
-    margin-left: 10px;  
-    
+
+.itemName b, .itemLanguage b{
+    margin-right:8px ;
+}
+
+.itemLink{
+    display: block;
+    background-color: #20426e;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 8px;
+    text-decoration: none;
 }
 
 .avatar{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 0;
+  
 }
 
 .avatar--img{
@@ -51,6 +53,7 @@ padding: 0;
     margin-left: 20px;
     border: 1px solid black;
     height: 180px;
+    margin: 20px;
 }
 
 .footer{
