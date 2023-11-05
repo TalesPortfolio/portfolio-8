@@ -2,8 +2,8 @@ import "./main.css";
 
 const Header = () => {
   return (
-    <header className="header">
-      <div>
+    <header>
+      <div className="header">
         <h1>
           Search for the desired user Git{" "}
           <svg
