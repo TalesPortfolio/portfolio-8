@@ -1,11 +1,11 @@
-import { HeaderBar, LinkCard, Links, LinksItem } from './styles'
+import { HeaderBar, Logo, LinkCard, Links, LinksItem } from './styles'
 
-import logo from '../../assets/images/logoLaco.svg'
+import logo from '../../assets/images/lacoLogo.png'
 import Link_card from '../../assets/images/bolsa-de-compras.gif'
 
 const Header = () => (
   <HeaderBar>
-    <p>SPACE LOGO</p>
+    <Logo src={logo} alt="Logo Magazin" />
     <nav>
       <Links>
         <LinksItem>
@@ -15,7 +15,7 @@ const Header = () => (
           <a href="#">Nouvelles</a>
         </LinksItem>
         <LinksItem>
-          <a href="#">Promoções</a>
+          <a href="#">Promos</a>
         </LinksItem>
       </Links>
     </nav>
