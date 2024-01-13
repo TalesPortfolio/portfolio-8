@@ -5,7 +5,10 @@ import Link_card from '../../assets/images/bolsa-de-compras.gif'
 
 const Header = () => (
   <HeaderBar>
-    <Logo src={logo} alt="Logo Magazin" />
+    <Logo href="#">
+      <img src={logo} alt="Logo Magazin" />
+    </Logo>
+
     <nav>
       <Links>
         <LinksItem>

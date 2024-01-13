@@ -17,8 +17,10 @@ export const HeaderBar = styled.header`
   }
 `
 
-export const Logo = styled.img`
-  height: 40px;
+export const Logo = styled.a`
+  img {
+    height: 40px;
+  }
 `
 
 export const Links = styled.ul`
