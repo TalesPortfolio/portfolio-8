@@ -1,5 +1,5 @@
 import Product from '../Product'
-import { Container, List } from './styles'
+import { Container, List, Title } from './styles'
 
 type Props = {
   title: string
@@ -8,12 +8,58 @@ type Props = {
 
 const ProductsList = ({ background, title }: Props) => (
   <Container>
-    <h2>{title}</h2>
+    <Title>{title}</Title>
     <List>
-      <Product />
-      <Product />
-      <Product />
-      <Product />
+      <Product
+        category="€0,00 EUR"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        image="//placehold.it/222x250"
+        title="Nome do laço"
+      />
+      <Product
+        category="€0,00 EUR"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        image="//placehold.it/222x250"
+        title="Nome do laço"
+      />
+      <Product
+        category="€0,00 EUR"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        image="//placehold.it/222x250"
+        title="Nome do laço"
+      />
+      <Product
+        category="€0,00 EUR"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        image="//placehold.it/222x250"
+        title="Nome do laço"
+      />
+    </List>
+    <List>
+      <Product
+        category="€0,00 EUR"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        image="//placehold.it/222x250"
+        title="Nome do laço"
+      />
+      <Product
+        category="€0,00 EUR"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        image="//placehold.it/222x250"
+        title="Nome do laço"
+      />
+      <Product
+        category="€0,00 EUR"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        image="//placehold.it/222x250"
+        title="Nome do laço"
+      />
+      <Product
+        category="€0,00 EUR"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        image="//placehold.it/222x250"
+        title="Nome do laço"
+      />
     </List>
   </Container>
 )
