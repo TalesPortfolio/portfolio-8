@@ -6,7 +6,10 @@ export const Cores = {
   texto_Bar: '#c5018e',
   rosa_claro: '#ffedf7',
   rosa_escuro: '#f398ca',
-  fundo: '#f4e4f4'
+  fundo: '#FFF0F5',
+  bg_btn: '#7D26CD',
+  bg_card: '#FFE1FF',
+  bg_card2: '#CDB5CD'
 }
 
 export const GlobalCss = createGlobalStyle`
